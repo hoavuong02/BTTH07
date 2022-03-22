@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="form">
+        <h1 class="form__tittle">Registration Form</h1>
+        <div class="mt-10 user">
+            <div>User ID: </div>
+       <input type="text" name="txtUserId" id="txtUserId" class="userId__placeholder"></input>
+            <span id="userError"></span>
+        </div>
+        <div class="mt-10 password">
+            <div>Password: </div>
+       <input type="text" name="txtPassword" id="txtPassword" class="password__placeholder"></input>
+            <span id="passwordError"></span>
+        </div>
+        <div class="mt-10 name">
+            <div>Name: </div>
+       <input type="text" name="txtName" id="txtName" class="name__placeholder"></input>
+            <span id="nameError"></span>
+        </div>
+        <div class="mt-10 address">
+            <div>Address: </div>
+       <input type="text" name="txtAddress" id="txtAddress" class="address__placeholder"></input>
+            <span id="addressError"></span>
+        </div>
+        <div class="mt-10 country">
+            <div>Contry: </div>
+       <input list="contries" name="contry" id="contry" class="contry__placeholder">
+            <datalist id="contries">
+                <option value="VN">
+                <option value="China">
+                <option value="America">
+             </datalist>
+             <span id="contryError"></span>
+        </div>
+        <div class="mt-10 zipcode">
+            <div>ZipCode: </div>
+       <input type="number" name="nmbZipCode" id="nmbZipCode" class="zipCode__placeholder"></input>
+            <span id="zipCodeError"></span>
+        </div>
+        <div class="mt-10 email">
+            <div>Email: </div>
+       <input type="text" name="txtEmail" id="txtEmail" class="email__placeholder"></input>
+            <!-- <input type="Email" name="Email" id="Email" class="email__placeholder"></input> -->
+            <span id="emailError"></span>
+        </div>
+        <div class="mt-10 sex">
+            <div>Sex: </div>
+       <input type="radio" name="male" id="male">Male</input>
+            <input type="radio" name="female" id="female">Female</input>
+            <span id="sexError"></span>
+        </div>
+        <div class="mt-10 language">
+            <div>Language: </div>
+       <input type="checkbox" name="enlish" id="english">English</input>
+            <input type="checkbox" name="nonEnglish" id="nonEnglish" >Non English</input>
+            <span id="languageError"></span>
+        </div>
+        <div class="mt-10 about">
+            <div>About: </div>
+       <input type="text" name="txtAbout" id="txtAbout" class="about__placeholder"></input>
+            <span id="aboutError"></span>
+        </div>
+        <button type="submit" id="btnCheck">submit</button>
+</body>
+</html>

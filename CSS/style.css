@@ -1,0 +1,66 @@
+
+.mt-10 {
+    margin-top: 10px;
+}
+#form {
+    display: inline-block;
+    width: 500px;
+    padding: 10px 50px;
+    margin-top: 20px;
+    margin-left: 20%;
+    border: 1px solid #ccc;
+    box-shadow: 12px 12px #ccc
+}
+
+#form h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#form label {
+    padding-right: 1px;
+
+}
+
+#form > div {
+    display: flex;
+    
+}
+#form > div div {
+    width: 70px;
+    text-align: end;
+    margin-right: 4px;
+
+}
+.about__placeholder {
+    width: 300px;
+    height: 100px;
+}
+
+.userId__placeholder,
+.password__placeholder {
+    width: 100px;
+}
+
+.name__placeholder,
+.address__placeholder,
+.email__placeholder {
+    width: 300px;
+
+}
+
+.contry__placeholder {
+    width: 200px;
+}
+
+.zipCode__placeholder {
+    width: 150px;
+}
+
+#btnCheck {
+    margin-left: 40%;
+    margin-top: 10px;
+    padding: 8px;
+}
