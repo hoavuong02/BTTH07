@@ -10,6 +10,12 @@ var Email = document.querySelector(".email__placeholder")
 var emailError = document.getElementById("emailError")
 //change same blur
 
+
+// disable submit btn
+var submitBth = document.getElementById('btnCheck')
+
+
+
 //UserID
 function checkUserId(userId){
     var userIdRegex = /^[a-zA-Z0-9]{5,12}$/  
@@ -19,13 +25,15 @@ function checkUserId(userId){
 userId.addEventListener("change",function(){
     if(checkUserId(userId.value)){
         userError.textContent = " "
+        submitBth.disabled = false;
     }
     else{
         userError.textContent = "Must be of length 5-12"
         userError.style.color = "red"
+        submitBth.disabled = true;
     }
-    
 })
+
 
 //password
 function checkPassword(password){
@@ -36,10 +44,12 @@ function checkPassword(password){
 password.addEventListener("change",function(){
     if(checkPassword(password.value)){
         passwordError.textContent = " "
+        submitBth.disabled = false;
     }
     else{
         passwordError.textContent = "Must be of length 7-12"
         passwordError.style.color = "red"
+        submitBth.disabled = true;
     }
     
 })
@@ -53,10 +63,12 @@ function checkName(name){
 Name.addEventListener("change",function(){
     if(checkName(Name.value)){
         nameError.textContent = " "
+        submitBth.disabled = false;
     }
     else{
         nameError.textContent = "alphabates only"
         nameError.style.color = "red"
+        submitBth.disabled = true;
     }
     
 })
@@ -70,10 +82,12 @@ function checkZipCode(code){
 zipCode.addEventListener("change",function(){
     if(checkZipCode(zipCode.value)){
         zipCodeError.textContent = " "
+        submitBth.disabled = false;
     }
     else{
         zipCodeError.textContent = "Must be numeric only"
         zipCodeError.style.color = "red"
+        submitBth.disabled = true;
     }
     
 })
@@ -87,10 +101,12 @@ function checkEmail(email){
 Email.addEventListener("change",function(){
     if(checkEmail(Email.value)){
         emailError.textContent = ""
+        submitBth.disabled = false;
     }
     else{
         emailError.textContent = "Must be a valid Email"
         emailError.style.color = "red"
+        submitBth.disabled = true;
     }
     
 })
@@ -103,3 +119,7 @@ function onlyOne(checkbox) {
         item.checked = false
     })
 }
+
+
+
+
