@@ -11,21 +11,21 @@ var emailError = document.getElementById("emailError")
 //change same blur
 
 //UserID
-function checkUserId(userId){
-    var userIdRegex = /^[a-zA-Z0-9]{5,12}$/  
-    return userIdRegex.test(userId)
-}
-
-userId.addEventListener("change",function(){
-    if(checkUserId(userId.value)){
-        userError.textContent = " "
-    }
-    else{
-        userError.textContent = "Must be of length 5-12"
-        userError.style.color = "red"
+    function checkUserId(userId){
+        var userIdRegex = /^[a-zA-Z0-9]{5,12}$/  
+        return userIdRegex.test(userId)
     }
     
-})
+    userId.addEventListener("change",function(){
+            if(checkUserId(userId.value)){
+                userError.textContent = " "
+            }
+            else{
+                userError.textContent = "Must be of length 5-12"
+                userError.style.color = "red"
+            }
+            
+        })
 
 //password
 function checkPassword(password){
