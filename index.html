@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,76 +8,81 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <form action="" id="form">
         <h1 class="form__tittle">Registration Form</h1>
         <div class="mt-10 user">
             <div>User ID: </div>
-       <input type="text" name="txtUserId" id="txtUserId" class="userId__placeholder" required></input>
+            <input type="text" name="txtUserId" id="txtUserId" class="userId__placeholder" required></input>
             <span id="userError"></span>
         </div>
 
         <div class="mt-10 password">
             <div>Password: </div>
-       <input type="text" name="txtPassword" id="txtPassword" class="password__placeholder" required></input>
+            <input type="text" name="txtPassword" id="txtPassword" class="password__placeholder" required></input>
             <span id="passwordError"></span>
         </div>
 
         <div class="mt-10 name">
             <div>Name: </div>
-       <input type="text" name="txtName" id="txtName" class="name__placeholder" required></input>
+            <input type="text" name="txtName" id="txtName" class="name__placeholder" required></input>
             <span id="nameError"></span>
         </div>
 
         <div class="mt-10 address">
             <div>Address: </div>
-       <input type="text" name="txtAddress" id="txtAddress" class="address__placeholder"></input>
+            <input type="text" name="txtAddress" id="txtAddress" class="address__placeholder"></input>
             <span id="addressError"></span>
         </div>
 
         <div class="mt-10 country">
             <div>Contry: </div>
             <input list="contries" name="contry" id="contry" class="contry__placeholder" required>
-            
+
             <datalist id="contries">
                 <option value="VN">
                 <option value="China">
                 <option value="America">
             </datalist>
-             <span id="contryError"></span>
+            <span id="contryError"></span>
         </div>
 
         <div class="mt-10 zipcode">
             <div>ZipCode: </div>
-       <input type="text" name="nmbZipCode" id="nmbZipCode" class="zipCode__placeholder" required></input>
+            <input type="text" name="nmbZipCode" id="nmbZipCode" class="zipCode__placeholder" required></input>
             <span id="zipCodeError"></span>
         </div>
 
         <div class="mt-10 email">
             <div>Email: </div>
-       <input type="text" name="txtEmail" id="txtEmail" class="email__placeholder" required></input>
+            <input type="text" name="txtEmail" id="txtEmail" class="email__placeholder" required></input>
             <!-- <input type="Email" name="Email" id="Email" class="email__placeholder"></input> -->
             <span id="emailError"></span>
         </div>
         <div class="mt-10 sex">
             <div>Sex: </div>
             <input type="radio" name="gender" id="male" required>Male</input>
-            <input type="radio" name="gender" id="female" required >Female</input>
+            <input type="radio" name="gender" id="female" required>Female</input>
             <span id="sexError"></span>
         </div>
         <div class="mt-10 language">
             <div>Language: </div>
             <input type="checkbox" name="check" id="english" onclick="onlyOne(this)">English</input>
-            <input type="checkbox" name="check" id="nonEnglish" onclick="onlyOne(this)" >Non English</input>
+            <input type="checkbox" name="check" id="nonEnglish" onclick="onlyOne(this)">Non English</input>
             <span id="languageError"></span>
         </div>
         <div class="mt-10 about">
             <div>About: </div>
-       <input type="text" name="txtAbout" id="txtAbout" class="about__placeholder"></input>
+            <input type="text" name="txtAbout" id="txtAbout" class="about__placeholder"></input>
             <span id="aboutError"></span>
         </div>
         <button type="submit" id="btnCheck">submit</button>
 
-        <script src="./JS/main.js"></script>
+        <!-- <script src="./JS/main.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./JS/jquery.js"></script>
+
 </body>
+
 </html>
