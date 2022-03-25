@@ -17,23 +17,6 @@ var submitBth = document.getElementById('btnCheck')
 
 
 //UserID
-function checkUserId(userId){
-    var userIdRegex = /^[a-zA-Z0-9]{5,12}$/  
-    return userIdRegex.test(userId)
-}
-
-userId.addEventListener("change",function(){
-    if(checkUserId(userId.value)){
-        userError.textContent = " "
-        submitBth.disabled = false;
-    }
-    else{
-        userError.textContent = "Must be of length 5-12"
-        userError.style.color = "red"
-        submitBth.disabled = true;
-    }
-})
-
 
 //password
 function checkPassword(password){
@@ -51,7 +34,6 @@ password.addEventListener("change",function(){
         passwordError.style.color = "red"
         submitBth.disabled = true;
     }
-    
 })
 //Name
 
